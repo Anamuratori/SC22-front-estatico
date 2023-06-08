@@ -36,7 +36,7 @@
                                 <li><a class="dropdown-item" href="#htmlcss">HTML + CSS</a></li>
                                 <li><a class="dropdown-item" href="#java">Java</a></li>
                                 <li><a class="dropdown-item" href="#docker">Docker</a></li>
-                                <li><a class="dropdown-item" href="#python">Python</a></li>
+                                <li><a class="dropdown-item" href="#php">PHP</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -83,12 +83,29 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>2538
+                                        <span id="likeC" onclick="incrementarC()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemC">2656</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        let botaoLikeC = document.getElementById("likeC")
+                        let numeroC = document.getElementById("contagemC")
+                
+                        let countC = 2656;
+                
+                        function incrementarC() {
+                            countC++;
+                            numeroC.innerText = countC
+                        }
+                
+                    </script>
+
+                    <!--FIM DIV C# -->
+
+                    <!--INICIO DIV MYSQL-->
 
                     <div class="col-md-4" id="mysql">
                         <div class="card mb-4 shadow-sm">
@@ -103,12 +120,29 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>876
+                                        <span id="likeSql" onclick="incrementarSql()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemSql">8768</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        let botaoLikeSql = document.getElementById("likeSql")
+                        let numeroSql = document.getElementById("contagemSql")
+                
+                        let countSql = 8768;
+                
+                        function incrementarSql() {
+                            countSql++;
+                            numeroSql.innerText = countSql
+                        }
+                
+                    </script>
+
+                    <!--FIM DIV MYSQL-->
+
+                    <!--INICIO DIV HTML-->
 
                     <div class="col-md-4" id="htmlcss">
                         <div class="card mb-4 shadow-sm">
@@ -123,12 +157,29 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>1500
+                                        <span id="likeHtml" onclick="incrementarHtml()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemHtml">5446</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        let botaoLikeHtml = document.getElementById("likeHtml")
+                        let numeroHtml = document.getElementById("contagemHtml")
+                
+                        let countHtml = 5446;
+                
+                        function incrementarHtml() {
+                            countHtml++;
+                            numeroHtml.innerText = countHtml
+                        }
+                
+                    </script>
+
+                    <!--FIM DIV HTML-->
+
+                    <!--INICIO DIV JAVA-->
 
                     <div class="col-md-4" id="java">
                         <div class="card mb-4 shadow-sm">
@@ -143,12 +194,29 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>4846
+                                        <span id="likeJava" onclick="incrementarJava()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemJava">10265</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <script>
+                        let botaoLikeJava = document.getElementById("likeJava")
+                        let numeroJava = document.getElementById("contagemJava")
+                
+                        let countJava = 10265;
+                
+                        function incrementarJava() {
+                            countJava++;
+                            numeroJava.innerText = countJava
+                        }
+                
+                    </script>
+
+                    <!--FIM DIV JAVA-->
+
+                    <!--INICIO DIV DOCKER-->
 
                     <div class="col-md-4" id="docker">
                         <div class="card mb-4 shadow-sm">
@@ -163,19 +231,36 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>900
+                                        <span id="likeDocker" onclick="incrementarDocker()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemDocker">1356</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4" id="python">
+                    <script>
+                        let botaoLikeDocker = document.getElementById("likeDocker")
+                        let numeroDocker = document.getElementById("contagemDocker")
+                
+                        let countDocker = 1356;
+                
+                        function incrementarDocker() {
+                            countDocker++;
+                            numeroDocker.innerText = countDocker
+                        }
+                
+                    </script>
+
+                    <!--FIM DIV DOCKER-->
+
+                    <!--INICIO DIV PHP-->
+
+                    <div class="col-md-4" id="php">
                         <div class="card mb-4 shadow-sm">
                             <img class="card-img-top" src="./Assets/php2.jpg" data-holder-rendered="true"
                                 style="height: 225px; width: 100%; display: block;">
                             <div class="card-body">
-                                <h3>Python</h3>
+                                <h3>PHP</h3>
                                 <p class="card-text">Com o poder do PHP, a imaginação é o único limite para a criação de
                                     soluções web incríveis e inovadoras.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -183,15 +268,27 @@
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
                                     </div>
                                     <div class="d-flex">
-                                        <span class="material-symbols-outlined me-3 ">thumb_up</span>6875
+                                        <span id="likePhp" onclick="incrementarPhp()" class="material-symbols-outlined me-3">thumb_up</span><p id="contagemPhp">4648</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!--FIM DA DIV MODELO-->
+                    <script>
+                        let botaoLikePhp = document.getElementById("likePhp")
+                        let numeroPhp = document.getElementById("contagemPhp")
+                
+                        let countPhp = 4648;
+                
+                        function incrementarPhp() {
+                            countPhp++;
+                            numeroPhp.innerText = countPhp
+                        }
+                
+                    </script>
 
+                    <!--FIM DIV PHP-->
                 </div>
             </div>
         </div>
@@ -233,6 +330,7 @@
     </section>
     <!--FIM SOBRE-->
 
+    <!--CODIGO JS LIKES-->
 
     <!--FIM MAIN-->
 
