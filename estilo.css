@@ -9,6 +9,25 @@ html, body {
     top: 0;
 }
 
+.navbar-nav {
+    --bs-nav-link-hover-color: rgb(140, 139, 132);
+    justify-content:center;
+    flex: auto;
+    font-family: var(--bs-body-font-family);
+    
+}
+.nav-link {
+    color: white;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color:rgb(140, 139, 132);
+}
+
 .dropdown-item {
     display: block;
     width: 100%;
@@ -24,40 +43,20 @@ html, body {
     border-radius: var(--bs-dropdown-item-border-radius,0);
 }
 
-.navbar-nav {
-    --bs-nav-link-hover-color: rgb(140, 139, 132);
-    justify-content:center;
-    flex: auto;
+.block {
+    height: 50px;
+}
+
+h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 700;
+    color: white;
+}
+
+.lead {
+    font-size: 1rem;
     font-family: var(--bs-body-font-family);
-    
-}
-
-.dev-image {
-    width: 400px;
-    fill-opacity: 0.5;
-}
-
-.sobre-codecraft {
-    justify-content:center;
-    flex: auto;
     color: white;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: justify;  
-    
-}
-
-.nav-link {
-    color: white;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    font-size: 1rem;
-    font-weight: 300;
-    cursor: pointer;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color:rgb(140, 139, 132);
 }
 
 body::before {
@@ -82,39 +81,14 @@ body::after {
     left: 0;
     z-index: -2;
     filter: grayscale(1);
-
 }
 
-.block {
-    height: 50px;
-}
-
-h1 {
-    font-family: 'Bruno Ace SC', cursive;
-    font-weight: 700;
-    color: white;
-}
-
-.lead {
-    font-size: 1rem;
-    font-family: var(--bs-body-font-family);
-    color: white;
-
+.card-img-top {
+    object-fit: cover;
 }
 
 .material-symbols-outlined {
     cursor: pointer;
-}
-
-.arrow-up {
-    font-size: 50px;
-    color: white;
-
-}
-
-
-.card-img-top {
-    object-fit: cover;
 }
 
 .mb-4 {
@@ -127,15 +101,11 @@ h1 {
     transition: 0.5s;
 }
 
-.form {
-    width: 400px;
-}
-
-
 .col-md-4 {
     flex: 0 0 auto;
     width: 100%;
 }
+
 
 @media (min-width:768px) {
     .col-md-4 {
@@ -151,6 +121,34 @@ h1 {
         width: 33.3333%;
     }
 
+}
+
+.dev-image {
+    width: 400px;
+    fill-opacity: 0.5;
+}
+
+
+
+.col-sm {
+    text-align: justify;
+}
+
+.texto-codecraft {
+    color: white;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.mark {
+    text-align: center !important; 
+    background-color: rgb(255, 101, 77);
+    color: white;
+}
+
+.arrow-up {
+    font-size: 50px;
+    color: white;
 }
 
 
